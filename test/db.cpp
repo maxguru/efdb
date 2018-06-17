@@ -8,10 +8,6 @@ db* db::instance(NULL);
 db::db()
 	: people()
 	, groups()
-	, persons_groups(
-			people, PersonGroups::EraseModelWhenErasingRelation,
-			groups, PersonGroups::EraseModelWhenErasingRelation
-			)
 {
 	instance = this;
 	
@@ -39,7 +35,6 @@ void db::load()
 	
 	if(exists(path("people.json"))) people.importJson("people.json");
 	if(exists(path("groups.json"))) groups.importJson("groups.json");
-	if(exists(path("persons_groups.json"))) groups.importJson("persons_groups.json");
 }
 
 void db::save() const
@@ -50,5 +45,4 @@ void db::save() const
 	
 	people.exportJson("people.json");
 	groups.exportJson("groups.json");
-	persons_groups.exportJson("persons_groups.json");
 }

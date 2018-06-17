@@ -22,7 +22,6 @@ class db
 		
 		PersonStore people;
 		GroupStore groups;
-		PersonGroups persons_groups;
 		
 		static db& getInstance();
 		static db* instance;
