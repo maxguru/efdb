@@ -193,7 +193,7 @@ transaction->getSharedLock(&groups);
 groups.exportJson("groups.json");
 ```
 
-## Supporting EFDB
+## Supporting EFDB Development
 
 If you find the idea behind EFDB valuable, please consider supporting its development.
 
@@ -206,7 +206,7 @@ You can financially support EFDB's development through the [GitHub Sponsors page
 
 ### Contributing
 
-We also welcome contributions through:
+Contributions are also welcome through:
 - Bug reports and feature requests
 - Documentation improvements
 - Pull requests
